@@ -37,8 +37,8 @@ class App extends Component {
     const harry = this.state.harry;
     const filter = this.state.filter;
     return harry.filter(item=>
-      item.name.includes(filter)
-
+      item.name.toUpperCase().includes(filter.toUpperCase())
+     
     )
 
   }
