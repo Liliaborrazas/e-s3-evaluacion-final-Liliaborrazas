@@ -46,7 +46,7 @@ class App extends Component {
      return (
        <div className="app">
        <header>
-         <div>
+         <div className="input-page">
            <h1>Harry Potter characters</h1>
            <input type="text" className="input" placeholder="escribe tu personaje" onKeyUp={this.filterPerson}/>
          </div>

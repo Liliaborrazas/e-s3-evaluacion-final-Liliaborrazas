@@ -1,8 +1,51 @@
 .app {
   text-align: center;
+  
 }
 
+.card-harry_list{
 
+  border: 2px solid black;
+  width: 200px;
+  height: 100%;
+  border-radius: 5px;
+
+}
+.card-image{
+  width: 200px;
+  margin:0 auto;
+  margin-bottom: 0;
+ 
+}
+.card-harry{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.card-data{
+  background: orange;
+  margin-top: 0;
+  
+}
+.card-name{
+  margin-top: 0;
+  padding: 10px;
+  color: aliceblue;
+}
+.houseItem{
+  margin: 0;
+  padding: 10px;
+  color: aliceblue;
+}
+.card-item{
+  margin: 0;
+}
+.input{
+  border: 4px solid black;
+  height: 20px;
+  width: 50%;
+  
+}
 
 @keyframes App-logo-spin {
   from {

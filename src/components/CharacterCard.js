@@ -5,9 +5,11 @@ class CharacterCard extends Component{
         
         return(
         <div className="card-harry_list">
-        <h4>{this.props.item.name}</h4>
-        <img src={this.props.item.image} alt={this.props.item.name}/>
+        <img className="card-image" src={this.props.item.image} alt={this.props.item.name}/>
+        <div className="card-data">
+        <h4 className="card-name">{this.props.item.name}</h4>
         <p className="houseItem">{this.props.item.house}</p>
+        </div>
         </div>)
 
     }
