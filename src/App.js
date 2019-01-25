@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
+import { fetchHarry } from './services/harryService';
 import './App.css';
 
-const ENDPOINT = 'http://hp-api.herokuapp.com/api/characters';
+
 
 
 class App extends Component {
   constructor(props){
     super(props)
-  };
+  }
 
   componentDidMount(){
-    fetch(ENDPOINT)
-    .then(response=> response.json())
+    fetchHarry
     .then(data=>{
       console.log(data)
     })
