@@ -12,6 +12,8 @@ class App extends Component {
       harry:[],
       filter: ""
     }
+    this.filterInput=this.filterInput.bind(this); 
+    this.filterPerson=this.filterPerson.bind(this);
     
   }
 
@@ -25,16 +27,16 @@ class App extends Component {
       }
     )};
 
-    filterPerson(e){
+  filterPerson(e){
       const author = e.currentTarget.value;
       this.setState({filter:author});
     };
   
-    filterInput(){
+  filterInput(){
       const harry = this.state.harry;
       const filter = this.state.filter;
       return harry.filter(item=>
-        item.name.includes(filter)
+        item.name.toLowerCase().includes(filter.toLowerCase())
       )
     }
      
@@ -44,7 +46,7 @@ class App extends Component {
         <header>
           <div className="input-page">
            <h1>Harry Potter characters</h1>
-           <input type="text" className="input" placeholder="Escribe tu personaje"/>
+           <input type="text" className="input" placeholder="Escribe tu personaje" onKeyUp={this.filterPerson}/>
          </div>
         </header>
         <main>
