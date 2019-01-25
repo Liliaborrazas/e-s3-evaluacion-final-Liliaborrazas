@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { fetchHarry } from './services/harryService';
+import CharacterList from './components/CharacterList';
 import './App.css';
-
-
-
 
 class App extends Component {
   constructor(props){
@@ -51,17 +49,7 @@ class App extends Component {
         </header>
         <main>
           <div>
-            <ul className="list-person">
-            {this.filterInput().map((item, index)=>{
-          return(<li className="card-item" key={index}>
-          <div className="card-harry_list">
-          <h4>{item.name}</h4>
-          <img src={item.image} alt={item.name}/>
-          <p className="houseItem">{item.house}</p>
-          </div>
-        </li>)
-        })}
-        </ul>)
+            <CharacterList filterInput={this.filterInput()}/>
           </div>
         </main>
       </div>
