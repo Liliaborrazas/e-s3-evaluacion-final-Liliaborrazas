@@ -10,15 +10,15 @@
   height: 30px;
   border: 2px solid orchid;
 }
-.card-harry_list{
-  background: orchid;
-  width: 200px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
 .list-person{
   list-style: none;
 }
+.card-harry_list{
+background: orchid;
+width: 200px;
+border-radius: 5px;
+margin-bottom: 15px;
+ }
 .card-img{
   width: 100%;
   border-radius: 5px;
