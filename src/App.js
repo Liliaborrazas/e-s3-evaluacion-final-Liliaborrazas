@@ -7,16 +7,20 @@ import './App.css';
 
 class App extends Component {
   constructor(props){
-    super(props)
+    super(props);
+    
   }
 
   componentDidMount(){
     fetchHarry
     .then(data=>{
-      console.log(data)
-    })
-
-  }
+       const dataHarry = data.map((item, index)=>{
+         return {...item, id: index };
+       });
+      
+      }
+    )}
+     
   render() {
     return (
       <div className="app">
