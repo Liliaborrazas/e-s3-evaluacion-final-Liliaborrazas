@@ -12,23 +12,34 @@
 }
 .list-person{
   list-style: none;
+  align-items: center;
 }
 .card-harry_list{
-background: rgb(135, 234, 251);
-width: 200px;
-border-radius: 5px;
+background-image: url('images/Stars-at-Night-Backgrounds.jpg');
+display: flex;
+flex-direction: column;
+width: 300px;
+border-radius: 15px;
 margin-bottom: 15px;
-border: 2px solid black;
+border: 2px solid white;
+
  }
 .card-img{
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.image-card{
+  margin-left: 25px;
+  margin-top: 15px;
+  width: 250px;
+
 }
 .card-name{
-  color:#131750;
+  color:white;
 }
 .card-house{
-  color: #131750;
+  color: white;
   padding: 10px;
 }
 
