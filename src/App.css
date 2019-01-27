@@ -8,26 +8,27 @@
 .input{
   width: 50%;
   height: 30px;
-  border: 2px solid orchid;
+  border: 2px solid black;
 }
 .list-person{
   list-style: none;
 }
 .card-harry_list{
-background: orchid;
+background: rgb(135, 234, 251);
 width: 200px;
 border-radius: 5px;
 margin-bottom: 15px;
+border: 2px solid black;
  }
 .card-img{
   width: 100%;
   border-radius: 5px;
 }
 .card-name{
-  color: azure;
+  color:#131750;
 }
 .card-house{
-  color: azure;
+  color: #131750;
   padding: 10px;
 }
 
