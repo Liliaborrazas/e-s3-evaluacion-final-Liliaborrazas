@@ -37,6 +37,7 @@ width: 300px;
 height: 500px;
 border-radius: 15px;
 border: 2px solid white;
+margin: 10px;
 
  }
 .card-img{
@@ -44,7 +45,6 @@ border: 2px solid white;
   border-radius: 10px;
   border: 1px solid white;
   height: 350px;
-  
 }
 .image-card{
   
