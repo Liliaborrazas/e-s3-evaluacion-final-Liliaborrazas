@@ -48,7 +48,7 @@ class App extends Component {
          </div>
         </header>
         <main>
-          <div>
+          <div className="character-list">
             <CharacterList filterInput={this.filterInput()}/>
           </div>
         </main>

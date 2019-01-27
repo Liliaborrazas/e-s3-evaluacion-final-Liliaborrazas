@@ -4,23 +4,38 @@
 .title-page{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 40px;
+  color: black;
 }
 .input{
   width: 50%;
   height: 30px;
   border: 2px solid black;
+  border-radius: 10px;
+  background: white;
 }
 .list-person{
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; 
+  
+}
+.character-list{
   align-items: center;
+
+  
+}
+.card-item{
+  display: grid;
+  grid-template-rows: 550px;
+  grid-template-columns: 1fr;
 }
 .card-harry_list{
 background-image: url('images/Stars-at-Night-Backgrounds.jpg');
-display: flex;
-flex-direction: column;
 width: 300px;
+height: 500px;
 border-radius: 15px;
-margin-bottom: 15px;
 border: 2px solid white;
 
  }
@@ -28,12 +43,14 @@ border: 2px solid white;
   width: 100%;
   border-radius: 10px;
   border: 1px solid white;
+  height: 350px;
+  
 }
 .image-card{
+  
   margin-left: 25px;
   margin-top: 15px;
   width: 250px;
-
 }
 .card-name{
   color:white;
